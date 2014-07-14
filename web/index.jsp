@@ -27,5 +27,6 @@
         <div id="mensaje"></div>
         </div>
         <%@include file="WEB-INF/jspf/bottom1.jspf" %>
+        <%@include file="WEB-INF/jspf/seg1.jspf" %>
     </body>
 </html>

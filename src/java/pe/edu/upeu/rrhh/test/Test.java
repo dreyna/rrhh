@@ -16,7 +16,7 @@ public class Test {
         Test test = new Test();
         //test.listMYSQL();
         //test.editarmysql();
-        test.deleteMYSQl();
+       test.deleteMYSQl();
         test.listMYSQL();
  }
     public void listMYSQL(){
@@ -51,6 +51,6 @@ public class Test {
      public void deleteMYSQl(){
          InterfaceProveedorDAO aO = new ProveedorDAO();
         Proveedor proveedor = new Proveedor();
-        aO.delete(9);
+        aO.delete(4);
      }
 }
