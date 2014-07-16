@@ -28,4 +28,4 @@ public class Curso {
         this.nom_curso = nom_curso;
     }
     
-}
+}//hola mundo
