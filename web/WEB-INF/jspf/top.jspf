@@ -6,7 +6,8 @@
         <div class="menu">
             <a href="index" class="btn btn-mini btn-primary" role="button">Inicio</a>
             <a href="proveedor" class="btn btn-mini btn-primary" role="button">Proveedor</a>
-            <a href="index" class="btn btn-mini btn-primary" role="button">Inicio</a>
+            <a href="dpto?op=1" class="btn btn-mini btn-primary" role="button">Departamento</a>
+            <a href="dpto?op=2" class="btn btn-mini btn-primary" role="button">Inicio</a>
             <a href="index" class="btn btn-mini btn-primary" role="button">Inicio</a>
             <a href="index" class="btn btn-mini btn-primary" role="button">Inicio</a>
             <a href="index" class="btn btn-mini btn-primary" role="button">Inicio</a>

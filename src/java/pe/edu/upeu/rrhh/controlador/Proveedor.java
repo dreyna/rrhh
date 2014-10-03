@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import pe.edu.upeu.rrhh.dao.InterfaceProveedorDAO;
+import pe.edu.upeu.rrhh.interfaces.InterfaceProveedor;
 import pe.edu.upeu.rrhh.dao.ProveedorDAO;
 
 /**
@@ -54,7 +54,7 @@ public class Proveedor extends HttpServlet {
     protected void list(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
             String pagina = "/webcategoria/list.jsp";
-            InterfaceProveedorDAO aO = new ProveedorDAO();
+            InterfaceProveedor aO = new ProveedorDAO();
             HttpSession session = request.getSession(true);
             session.setAttribute("list", aO.list());
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(pagina);

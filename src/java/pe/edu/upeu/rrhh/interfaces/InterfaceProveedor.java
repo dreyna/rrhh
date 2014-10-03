@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package pe.edu.upeu.rrhh.dao;
+package pe.edu.upeu.rrhh.interfaces;
 
 import java.util.List;
 import pe.edu.upeu.rrhh.modelo.Proveedor;
@@ -13,7 +13,7 @@ import pe.edu.upeu.rrhh.modelo.Proveedor;
  *
  * @author Docente
  */
-public interface InterfaceProveedorDAO {
+public interface InterfaceProveedor {
     public List<Proveedor> list();
     public List<Proveedor> list2();
     public Proveedor edit(int id);

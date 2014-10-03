@@ -7,8 +7,11 @@
 package pe.edu.upeu.rrhh.test;
 
 import java.util.List;
+import pe.edu.upeu.rrhh.dao.DepartamentoDAO;
 import pe.edu.upeu.rrhh.dao.ProveedorDAO;
-import pe.edu.upeu.rrhh.dao.InterfaceProveedorDAO;
+import pe.edu.upeu.rrhh.interfaces.InterfaceDepartamento;
+import pe.edu.upeu.rrhh.interfaces.InterfaceProveedor;
+import pe.edu.upeu.rrhh.modelo.Departamento;
 import pe.edu.upeu.rrhh.modelo.Proveedor;
 
 public class Test {
@@ -16,11 +19,12 @@ public class Test {
         Test test = new Test();
         //test.listMYSQL();
         //test.editarmysql();
-       test.deleteMYSQl();
-        test.listMYSQL();
+//       test.deleteMYSQl();
+        test.editarmysql();
+//       test.listMYSQL();
  }
     public void listMYSQL(){
-        InterfaceProveedorDAO aO = new ProveedorDAO();
+        InterfaceProveedor aO = new ProveedorDAO();
         List<Proveedor> list = aO.list();
         if(list!=null){
         System.out.println("Listado de Proveedor");
@@ -32,13 +36,19 @@ public class Test {
         }
    }
     public void editarmysql(){
-        InterfaceProveedorDAO aO = new ProveedorDAO();
-        Proveedor proveedor = aO.edit(5);
-        System.out.println("id :"+proveedor.getProv()); 
+        boolean ab= false;
+        InterfaceDepartamento aO1 = new DepartamentoDAO();
+        Departamento departamento = new Departamento();
+        departamento.setIddpto(1);
+        departamento.setDpto("ADRA abs 123");
+        departamento.setCostos(100);
+        departamento.setStatus(6);
+        ab = aO1.edit(departamento);
+        System.out.println("id :"+ab); 
     
     }
     public void saveMYSQl(){
-        InterfaceProveedorDAO aO = new ProveedorDAO();
+        InterfaceProveedor aO = new ProveedorDAO();
         Proveedor proveedor = new Proveedor();
         proveedor.setId(11);
         proveedor.setProv("camilo");
@@ -49,7 +59,7 @@ public class Test {
         aO.save(proveedor);
     }
      public void deleteMYSQl(){
-         InterfaceProveedorDAO aO = new ProveedorDAO();
+         InterfaceProveedor aO = new ProveedorDAO();
         Proveedor proveedor = new Proveedor();
         aO.delete(4);
      }

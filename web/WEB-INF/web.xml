@@ -16,6 +16,10 @@
         <servlet-name>Dota</servlet-name>
         <servlet-class>pe.edu.upeu.rrhh.controlador.Dota</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>DepartamentoControl</servlet-name>
+        <servlet-class>pe.edu.upeu.rrhh.controlador.DepartamentoControl</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/index</url-pattern>
@@ -31,6 +35,10 @@
     <servlet-mapping>
         <servlet-name>Dota</servlet-name>
         <url-pattern>/dota</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DepartamentoControl</servlet-name>
+        <url-pattern>/dpto</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

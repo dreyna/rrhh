@@ -32,6 +32,18 @@ public abstract class ConexionBD {
     
     return rs;
     }
+    public boolean execute(String sql){
+    Statement st;
+    boolean save = true;
+        try {
+            st = conex.createStatement();
+            st.executeUpdate(sql);
+        } catch (SQLException e) {
+            save = false;
+            e.printStackTrace();            
+        }    
+    return save;
+    }
     public boolean ejecutar(String sql){
     Statement st;
     boolean op = true;

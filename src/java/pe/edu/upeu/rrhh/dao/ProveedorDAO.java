@@ -11,9 +11,10 @@ import java.util.ArrayList;
 import java.util.List;
 import pe.edu.upeu.rrhh.Factory.ConexionBD;
 import pe.edu.upeu.rrhh.Factory.FactoryConnectionDB;
+import pe.edu.upeu.rrhh.interfaces.InterfaceProveedor;
 import pe.edu.upeu.rrhh.modelo.Proveedor;
 
-public class ProveedorDAO implements InterfaceProveedorDAO{
+public class ProveedorDAO implements InterfaceProveedor{
     ConexionBD conn;
 
     public ProveedorDAO() {        

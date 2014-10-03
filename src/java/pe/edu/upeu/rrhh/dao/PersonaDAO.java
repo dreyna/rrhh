@@ -7,13 +7,14 @@
 package pe.edu.upeu.rrhh.dao;
 
 import java.util.List;
+import pe.edu.upeu.rrhh.interfaces.InterfaceProveedor;
 import pe.edu.upeu.rrhh.modelo.Proveedor;
 
 /**
  *
  * @author admin-harold.rojas
  */
-public class PersonaDAO implements InterfaceProveedorDAO{
+public class PersonaDAO implements InterfaceProveedor{
 
     @Override
     public List<Proveedor> list() {
