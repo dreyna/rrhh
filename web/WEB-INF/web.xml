@@ -20,6 +20,10 @@
         <servlet-name>DepartamentoControl</servlet-name>
         <servlet-class>pe.edu.upeu.rrhh.controlador.DepartamentoControl</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ClienteController</servlet-name>
+        <servlet-class>pe.edu.upeu.rrhh.controlador.ClienteController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Index</servlet-name>
         <url-pattern>/index</url-pattern>
@@ -39,6 +43,10 @@
     <servlet-mapping>
         <servlet-name>DepartamentoControl</servlet-name>
         <url-pattern>/dpto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ClienteController</servlet-name>
+        <url-pattern>/cc</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
